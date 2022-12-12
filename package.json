@@ -1,0 +1,14 @@
+{
+  "name": "hash-table",
+  "version": "1.0.0",
+  "description": "hash table implementation in JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "SHA",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
