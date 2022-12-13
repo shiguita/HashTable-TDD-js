@@ -60,7 +60,7 @@ class HashTable {
         let index = this._hash(key);
         if (!this.table[index]) {
             // No hay contenido en ese índice
-            return null;
+            return false;
         } else {
             // retorna el nodo si lo encuentra, null si no
             return this.iterList(index, key);
@@ -69,9 +69,10 @@ class HashTable {
     //funcion hash
     _hash(key) {
         let hash = 0;
-        for (let i = 0; i < 4; i++) {
+        for (let i = 2; i < 6; i++) {
             hash += key.charCodeAt(i);
         }
+        if (isNaN(hash)) return false;
         hash *= hash;
         hash = '' + hash;
         return +hash.substring(1, 3);

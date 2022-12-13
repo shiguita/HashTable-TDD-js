@@ -1,13 +1,13 @@
 const HashTable = require("./HashTable");
 
-const prueba = new HashTable();
-prueba._insert("Connor", "665378436")
-prueba._insert("Samantha", "665378436")
-prueba._insert("David", "665378436")
-prueba._insert("Felicia", "665378436")
-prueba._insert("William", "665378436")
-prueba._insert("Jasmine", "665378436")
-prueba._insert("Aaron", "665378436")
-prueba._insert("Greta", "665378436")
-prueba._insert("Elena", "665378436")
-console.log(prueba.table[50]);
+const ht = new HashTable();
+ht._insert("Connor Lee", "123456789");
+ht._insert("Sammy Jackson", "654321987");
+ht._insert("Alex Donovan", "123654789");
+ht._insert("Lenny Hart", "019283746");
+ht._insert("Jeremiah Trout", "098765432");
+ht._insert("Lissa Black", "756834291");
+ht._insert("Veronica Santana", "124356870");
+console.log(ht);
+console.table(ht.table);
+console.log(ht.table[93]);
